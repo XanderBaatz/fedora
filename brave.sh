@@ -1,5 +1,5 @@
 #!/bin/sh
-# wget -qO- 
+# wget -qO- https://git.io/JXr5G | sh
 
 sudo dnf install dnf-plugins-core
 
