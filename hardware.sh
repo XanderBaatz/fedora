@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#Credits:
+# https://forums.fedoraforum.org/showthread.php?324485-steps-After-install
+# https://bluehatrecord.wordpress.com/2015/10/06/the-hidden-dnf-groups-of-the-fedora-repositories/
+
 #Required repositories
 sudo dnf install -y \
 https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
