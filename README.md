@@ -37,5 +37,16 @@ Set the partitioning scheme to **Btrfs**.
 Click on the **+** icon to create a new **Mount Point**. \
 First select **/boot/efi** or **/boot** under **Mount Point**. Most systems are on EFI nowadays, which means **/boot/efi** is one you should pick. If you're unsure, you can always create both. \
 The **Desired Capacity** for an EFI partition is usually 550 MB. \
-Now create another **Mount Point** by clicking the **+** icon and choose **/** in **Mount Point**.
-this'll become the root partition meaning it's where all the system files will be.
+
+Now create a swap **Mount Point**. You can read all about swap partition size and additional info: [here](https://itsfoss.com/swap-size/) \
+
+Finally create a root **Mount Point** by clicking the, choosing **/** in **Mount Point**. The root partition is where all the system files will reside. It's usually a good idea to leave **Desired Capacity** blank here, which will use the remaining disk space. You can, however, choose any amount just make sure you got enough for your system. At the very least use a minimum of 20-30 GB.
+
+### User Settings
+Ignore the **Root Account** and go directly into **User Creation**.
+Now write your preferred name. It's recommended to keep it short, lowercased and only including letters. \
+Next, tick **Make this user administrator**. \
+For obvious security reasons it's good to require a password to access the account. \
+If your password is "Too short" simply click **Done** twice to ignore the warning. \
+\
+Finally press **Begin Installation** in the bottom right corner of the Installation Summary.
