@@ -9,4 +9,5 @@ The general aim is to have a stable and flexible foundation, combined with sane 
 * Able to be easily reproduced in many different environments.
 
 ## Installation Guide
-### Hello
+### 1. Download the ISO
+
