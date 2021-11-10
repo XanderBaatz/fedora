@@ -9,6 +9,10 @@ The general aim is to have a stable and flexible foundation, combined with sane 
 * Able to be easily reproduced in many different environments.
 
 ## Installation Guide
-### 1. Download the ISO
-Go to [Fedora Alternative Downloads](https://alt.fedoraproject.org/)
- and download the Everything image.
+### 1. Download and install the ISO
+1. Go to [Fedora Alternative Downloads](https://alt.fedoraproject.org/) and download the **Everything** iso.
+2. Burn the ISO to a USB drive. Backup any pre-existing files on the USB.
+   1. Test
+   2. Test 2
+3. Continuing
+4. Hello
