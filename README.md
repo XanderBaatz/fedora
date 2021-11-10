@@ -8,4 +8,4 @@ The general aim is to have a stable and flexible foundation, combined with sane 
 * Structured in an archive-like order, with additional paths based on choices.
 * Able to be easily reproduced in many different environments.
 
-# Installation Guide
+## Installation Guide
