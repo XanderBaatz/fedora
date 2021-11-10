@@ -1,5 +1,5 @@
 #!/bin/sh
-# wget -qO- https://git.io/XXXXX | sh
+# wget -qO- https://git.io/JXD3d | sh
 
 #install base packages
 sudo dnf install -y gdm gnome-shell gnome-terminal nautilus \
