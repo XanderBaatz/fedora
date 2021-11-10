@@ -28,4 +28,14 @@ It is recommended to install the system in English if possible.
 Configure preferred **Keyboard**, **Language Support** and **Time & Date** settings.
 
 #### Software
-Set the **Installation Source** to *Closest mirror*. \
+Set the **Installation Source** to: *Closest mirror*. \
+Under **Software Selection** select: *Fedora Custom Operating System*
+
+### System
+In **Installation Destination**, choose your preferred installation disk and under **Storage Configuration** click *Custom*, and then click **Done** in the top left. \
+Set the partitioning scheme to **Btrfs**.
+Click on the **+** icon to create a new **Mount Point**. \
+First select **/boot/efi** or **/boot** under **Mount Point**. Most systems are on EFI nowadays, which means **/boot/efi** is one you should pick. If you're unsure, you can always create both. \
+The **Desired Capacity** for an EFI partition is usually 550 MB. \
+Now create another **Mount Point** by clicking the **+** icon and choose **/** in **Mount Point**.
+this'll become the root partition meaning it's where all the system files will be.
