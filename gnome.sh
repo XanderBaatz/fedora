@@ -10,4 +10,3 @@ gnome-calculator gnome-system-monitor gnome-disk-utility gedit google-noto-emoji
 # Enable gdm display manager and enable graphical desktop
 sudo systemctl enable gdm
 sudo systemctl set-default graphical.target
-
