@@ -32,11 +32,11 @@ Configure preferred **Keyboard**, **Language Support** and **Time & Date** setti
 * Under **Software Selection** select: *Fedora Custom Operating System*
 
 #### System
-* In **Installation Destination**, choose your preferred installation disk and under **Storage Configuration** click *Custom*, and then click **Done** in the top left. \
+* In **Installation Destination**, choose your preferred installation disk and under **Storage Configuration** click *Custom*, and then click **Done** in the top left.
 * Set the partitioning scheme to **Btrfs**.
-* Click on the **+** icon to create a new **Mount Point**. \
-* First select **/boot/efi** or **/boot** under **Mount Point**. Most systems are on EFI nowadays, which means **/boot/efi** is one you should pick. If you're unsure, you can always create both. \
-    * The **Desired Capacity** for an EFI partition is usually 550 MB. \
+* Click on the **+** icon to create a new **Mount Point**.
+* First select **/boot/efi** or **/boot** under **Mount Point**. Most systems are on EFI nowadays, which means **/boot/efi** is one you should pick. If you're unsure, you can always create both.
+    * The **Desired Capacity** for an EFI partition is usually 550 MB.
 
 Now create a swap **Mount Point**. You can read all about swap partition size and additional info: [here](https://itsfoss.com/swap-size/) \
 
