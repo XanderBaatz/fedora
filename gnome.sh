@@ -4,7 +4,7 @@
 #install base packages
 sudo dnf install -y gdm gnome-shell gnome-terminal nautilus
 
-#
+# Enable gdm display manager and enable graphical desktop
+sudo systemctl enable gdm
+sudo systemctl set-default graphical.target
 
-#systemctl enable gdm; # Enable login using graphical interface
-#systemctl set-default graphical.target; # Boot to graphical interface as default
