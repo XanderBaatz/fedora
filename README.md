@@ -31,18 +31,18 @@ Configure preferred **Keyboard**, **Language Support** and **Time & Date** setti
 * Set the **Installation Source** to: *Closest mirror*. \
 * Under **Software Selection** select: *Fedora Custom Operating System*
 
-### System
-In **Installation Destination**, choose your preferred installation disk and under **Storage Configuration** click *Custom*, and then click **Done** in the top left. \
-Set the partitioning scheme to **Btrfs**.
-Click on the **+** icon to create a new **Mount Point**. \
-First select **/boot/efi** or **/boot** under **Mount Point**. Most systems are on EFI nowadays, which means **/boot/efi** is one you should pick. If you're unsure, you can always create both. \
-The **Desired Capacity** for an EFI partition is usually 550 MB. \
+#### System
+* In **Installation Destination**, choose your preferred installation disk and under **Storage Configuration** click *Custom*, and then click **Done** in the top left. \
+* Set the partitioning scheme to **Btrfs**.
+* Click on the **+** icon to create a new **Mount Point**. \
+* First select **/boot/efi** or **/boot** under **Mount Point**. Most systems are on EFI nowadays, which means **/boot/efi** is one you should pick. If you're unsure, you can always create both. \
+    * The **Desired Capacity** for an EFI partition is usually 550 MB. \
 
 Now create a swap **Mount Point**. You can read all about swap partition size and additional info: [here](https://itsfoss.com/swap-size/) \
 
 Finally create a root **Mount Point** by clicking the, choosing **/** in **Mount Point**. The root partition is where all the system files will reside. It's usually a good idea to leave **Desired Capacity** blank here, which will use the remaining disk space. You can, however, choose any amount just make sure you got enough for your system. At the very least use a minimum of 20-30 GB.
 
-### User Settings
+#### User Settings
 Ignore the **Root Account** and go directly into **User Creation**.
 Now write your preferred name. It's recommended to keep it short, lowercased and only including letters. \
 Next, tick **Make this user administrator**. \
