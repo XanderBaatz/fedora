@@ -45,7 +45,7 @@ It is recommended to install the system in English if possible.
 Ignore the **Root Account** and go directly into **User Creation**.
 1. Now write your preferred name. It's recommended to keep it short, lowercased and only including letters.
 2. Next, tick **Make this user administrator**.
-For obvious security reasons it's good to require a password to access the account.
+
+For obvious security reasons it's good to require a password to access the account. \
 If your password is "Too short" simply click **Done** twice to ignore the warning. \
-\
-Finally press **Begin Installation** in the bottom right corner of the Installation Summary.
+Finally press **Begin Installation** in the bottom right corner of the Installation Summary. 
