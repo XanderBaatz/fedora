@@ -28,7 +28,7 @@ It is recommended to install the system in English if possible.
 Configure preferred **Keyboard**, **Language Support** and **Time & Date** settings.
 
 #### Software
-* Set the **Installation Source** to: *Closest mirror*. \
+* Set the **Installation Source** to: *Closest mirror*.
 * Under **Software Selection** select: *Fedora Custom Operating System*
 
 #### System
