@@ -2,16 +2,14 @@
 # wget -qO- https://git.io/XXXXX | sh
 
 #install base packages
-sudo dnf install -y gdm gnome-shell gnome-terminal nautilus \
-chrome-gnome-shell gnome-tweaks @development-tools \
-gnome-terminal-nautilus xdg-user-dirs xdg-user-dirs-gtk ffmpegthumbnailer file-roller-nautilus \
-gnome-calculator gnome-system-monitor gnome-disk-utility gedit google-noto-emoji-color-fonts \
-gnome-shell-extension-appindicator gnome-shell-extension-pop-shell xprop \
-papirus-icon-theme
+sudo dnf install -y gnome-shell-extension-gsconnect
+
+#Open gsconnect ports in firewalld
+sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
+sudo systemctl restart firewalld.service
 
 # Enable gdm display manager and enable graphical desktop
-sudo systemctl enable gdm
-sudo systemctl set-default graphical.target
 
 #Remove gnome-tour? (check workspace switching)
 
