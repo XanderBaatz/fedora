@@ -6,7 +6,8 @@ sudo dnf install -y gdm gnome-shell gnome-terminal nautilus \
 chrome-gnome-shell gnome-tweaks @development-tools \
 gnome-terminal-nautilus xdg-user-dirs xdg-user-dirs-gtk ffmpegthumbnailer file-roller-nautilus \
 gnome-calculator gnome-system-monitor gnome-disk-utility gedit google-noto-emoji-color-fonts \
-gnome-shell-extension-appindicator gnome-shell-extension-pop-shell xprop
+gnome-shell-extension-appindicator gnome-shell-extension-pop-shell xprop \
+papirus-icon-theme
 
 # Enable gdm display manager and enable graphical desktop
 sudo systemctl enable gdm
