@@ -4,7 +4,7 @@
 #install base packages
 sudo dnf install -y gnome-shell-extension-gsconnect
 
-#Open gsconnect ports in firewalld
+#Open gsconnect ports in firewalld to enable connection
 sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
 sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
 sudo systemctl restart firewalld.service
