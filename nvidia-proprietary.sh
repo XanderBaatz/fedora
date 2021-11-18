@@ -10,7 +10,14 @@ sudo dnf remove -y ${pkgs}
 
 #exclude the nouveau package from dnf install
 sudo cp /etc/dnf/dnf.conf /etc/dnf/dnf.conf.bak
-sed  "/\[main\]/a exclude=${pkgs}" /etc/dnf/dnf.conf | sudo tee /etc/dnf/dnf.conf
+
+if [ $(grep -q -P '^exclude=' /etc/dnf/dnf.conf; echo $?) != "0" ]; then
+  sed "/\[main\]/a exclude=${pkgs}" /etc/dnf/dnf.conf | sudo tee /etc/dnf/dnf.conf
+else
+  sed "/exclude=/s/$/ ${pkgs}/" /etc/dnf/dnf.conf | sudo tee /etc/dnf/dnf.conf
+fi
+
+
 
 #blacklist the nouveau module as a module and in dracut
 #sudo echo 'blacklist nouveau' > /etc/modprobe.d/blacklist-nouveau.conf
