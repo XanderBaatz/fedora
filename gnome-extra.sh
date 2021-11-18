@@ -1,5 +1,5 @@
 #!/bin/sh
-# wget -qO- https://git.io/XXXXX | sh
+# wget -qO- https://git.io/J12Ul | sh
 
 #install base packages
 sudo dnf install -y \
