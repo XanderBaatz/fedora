@@ -7,7 +7,7 @@ chrome-gnome-shell gnome-tweaks @development-tools \
 gnome-terminal-nautilus xdg-user-dirs xdg-user-dirs-gtk ffmpegthumbnailer file-roller-nautilus \
 gnome-calculator gnome-system-monitor gnome-disk-utility gedit google-noto-emoji-color-fonts \
 gnome-shell-extension-appindicator gnome-shell-extension-pop-shell gnome-shell-extension-gsconnect xprop \
-papirus-icon-theme \
+#papirus-icon-theme \
 
 #Open gsconnect ports in firewalld to enable connection
 #sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
