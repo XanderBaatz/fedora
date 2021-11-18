@@ -17,8 +17,6 @@ else
   sed "/exclude=/s/$/ ${pkgs}/" /etc/dnf/dnf.conf | sudo tee /etc/dnf/dnf.conf
 fi
 
-
-
 #blacklist the nouveau module as a module and in dracut
 #sudo echo 'blacklist nouveau' > /etc/modprobe.d/blacklist-nouveau.conf
 #sudo echo 'omit_drivers+=" nouveau "' > /etc/dracut.conf.d/blacklist-nouveau.conf
