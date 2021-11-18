@@ -31,4 +31,4 @@ fi
 #sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
 #install nvidia driver and optional packages to enable cuda/nvenc
-#sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda
+sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda
