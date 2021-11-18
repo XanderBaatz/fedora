@@ -25,7 +25,8 @@ It is recommended to install the system in English if possible.
 
 #### Software
 * Set the **Installation Source** to: *Closest mirror*.
-* Under **Software Selection** select: *Fedora Custom Operating System*
+* In **Software Selection** under **Base Environment** select *Minimal Install*.
+* Under **Additional Software for Selected Environment** tick *Common NetworkManager Submodules*.
 
 #### System
 1. In **Installation Destination**, choose your preferred installation disk and under **Storage Configuration** click *Custom*, and then click **Done** in the top left.
