@@ -14,4 +14,4 @@ https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fed
 https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 #Fix Bluetooth and Wi-Fi
-sudo dnf group install -y @hardware-support
+sudo dnf install -y @hardware-support
