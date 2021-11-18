@@ -5,9 +5,9 @@
 sudo dnf install -y gnome-shell-extension-gsconnect
 
 #Open gsconnect ports in firewalld to enable connection
-sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
-sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
-sudo systemctl restart firewalld.service
+#sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
+#sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
+#sudo systemctl restart firewalld.service
 
 # Enable gdm display manager and enable graphical desktop
 
