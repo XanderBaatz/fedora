@@ -18,6 +18,12 @@ gnome-shell-extension-pop-shell xprop
 #sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
 #sudo systemctl restart firewalld.service
 
+#gsettings
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
+gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
+
 # Enable gdm display manager and enable graphical desktop
 
 #Remove gnome-tour? (check workspace switching)
