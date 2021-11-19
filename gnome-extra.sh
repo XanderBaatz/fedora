@@ -10,7 +10,7 @@ gnome-shell-extension-appindicator gnome-shell-extension-gsconnect \
 papirus-icon-theme
 
 #tiling window manager extension with working shortcuts
-sudo dnf install -y -setopt=install_weak_deps=False \
+sudo dnf install -y --setopt=install_weak_deps=False \
 gnome-shell-extension-pop-shell xprop
 
 #Open gsconnect ports in firewalld to enable connection
