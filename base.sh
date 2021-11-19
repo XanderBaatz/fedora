@@ -13,5 +13,5 @@ sudo dnf install -y \
 https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-#Fix Bluetooth and Wi-Fi
+#audio, bluetooth, wi-fi
 sudo dnf install -y @hardware-support @networkmanager-submodules @multimedia
