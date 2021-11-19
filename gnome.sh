@@ -2,7 +2,7 @@
 # wget -qO- https://git.io/JXD3d | sh
 
 #install base packages
-sudo dnf install -y gdm gnome-shell gnome-terminal nautilus
+sudo dnf install -y @multimedia gdm gnome-shell gnome-terminal nautilus
 
 # Enable gdm display manager and enable graphical desktop
 sudo systemctl enable gdm
