@@ -4,7 +4,7 @@
 # https://www.certdepot.net/rhel7-get-started-package-groups/
 
 #install base packages
-sudo dnf install -y --setopt=group_package_types=mandatory @critical-path-gnome
+sudo dnf install -y --setopt=group_package_types=mandatory @critical-path-gnome nautilus
 #sudo dnf install -y gdm gnome-shell gnome-terminal nautilus
 #sudo dnf install -y @critical-path-gnome
 
