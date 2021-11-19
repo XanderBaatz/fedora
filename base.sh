@@ -1,5 +1,5 @@
 #!/bin/sh
-# wget -qO- https://git.io/JXDG3 | sh
+# wget -qO- https://git.io/J1Keq | sh
 
 #Credits:
 # https://forums.fedoraforum.org/showthread.php?324485-steps-After-install
