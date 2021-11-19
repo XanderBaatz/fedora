@@ -19,8 +19,14 @@ elif [ $(grep -q -P "^exclude=.*${pkgs}.*$" /etc/dnf/dnf.conf; echo $?) != "0" ]
 fi
 
 #blacklist the nouveau module as a module and in dracut
-sudo echo 'blacklist nouveau' > /etc/modprobe.d/blacklist-nouveau.conf
-sudo echo 'omit_drivers+=" nouveau "' > /etc/dracut.conf.d/blacklist-nouveau.conf
+sudo sh -c "cat << EOF > /etc/modprobe.d/blacklist-nouveau.conf
+blacklist nouveau
+EOF"
+sudo sh -c "cat << EOF > /etc/dracut.conf.d/blacklist-nouveau.conf
+omit_drivers+=" nouveau "
+EOF"
+#sudo echo 'blacklist nouveau' > /etc/modprobe.d/blacklist-nouveau.conf
+#sudo echo 'omit_drivers+=" nouveau "' > /etc/dracut.conf.d/blacklist-nouveau.conf
 
 #backup the current initramfs
 sudo mv /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r)-nouveau.img
