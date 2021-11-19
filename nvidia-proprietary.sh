@@ -2,6 +2,7 @@
 # wget -qO- https://git.io/J1gdu | sh
 
 # Credits: https://gist.github.com/sebastiaanfranken/61474c1929ab256e4247a7a4a73262ca
+#          https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/#nvidia-install
 
 pkgs="xorg-x11-drv-nouveau"
 
