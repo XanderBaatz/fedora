@@ -55,3 +55,12 @@ For obvious security reasons it's good to require a password to access the accou
 If your password is "Too short" simply click **Done** twice to ignore the warning. \
 \
 Finally press **Begin Installation** in the bottom right corner of the Installation Summary.
+
+## Setup Guide
+Run in chronological order:
+
+1. Run `base.sh`
+* (Optional) Run `nvidia-proprietary.sh`
+2. Run `gnome.sh`
+* (Optional) Run `gnome-extra.sh`
+* (Optional) Run `brave.sh`
