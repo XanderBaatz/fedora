@@ -31,8 +31,10 @@ sudo su gdm -s /bin/bash
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
-xhost -SI:localuser:gdm
+exit
 "
+
+sudo xhost -SI:localuser:gdm
 
 echo "hello, testing!"
 
