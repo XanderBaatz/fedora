@@ -5,7 +5,7 @@ The general aim is to have a stable and flexible foundation, combined with sane 
 
 * Based on Fedora Everything (EV) image.
 * Simple stock setup of packages and applications.
-* Structured in an archive-like order, with additional paths based on choices.
+* Structured in an archive-like order, with additional paths based on choices. (Coming soon)
 * Able to be easily reproduced in many different environments.
 * Mainly comprised of Fedora group packages to retain stability and to avoid fragmentation.
 
