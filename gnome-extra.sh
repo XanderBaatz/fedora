@@ -30,7 +30,7 @@ xhost +SI:localuser:gdm
 sudo -u gdm gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 sudo -u gdm gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 sudo -u gdm gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
-sudo xhost -SI:localuser:gdm
+xhost -SI:localuser:gdm
 "
 
 #Remove gnome-tour? (check workspace switching)
