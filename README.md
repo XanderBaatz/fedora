@@ -7,7 +7,7 @@ The general aim is to have a stable and flexible foundation, combined with sane 
 * Simple stock setup of packages and applications.
 * Structured in an archive-like order, with additional paths based on choices.
 * Able to be easily reproduced in many different environments.
-* Mainly comprised of Fedora group packages to retain stability, compatibility and to avoid fragmentation.
+* Mainly comprised of Fedora group packages to retain stability and to avoid fragmentation.
 
 ## Installation Guide
 ### 1. Download and install the ISO
