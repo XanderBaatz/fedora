@@ -6,8 +6,6 @@
 #install base packages
 sudo dnf install -y --setopt=group_package_types=mandatory --setopt=exclude=gnome-tour \
 @critical-path-gnome nautilus
-#sudo dnf install -y gdm gnome-shell gnome-terminal nautilus
-#sudo dnf install -y @critical-path-gnome
 
 # Enable gdm display manager and enable graphical desktop
 sudo systemctl enable gdm
