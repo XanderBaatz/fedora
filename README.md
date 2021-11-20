@@ -18,7 +18,7 @@ The general aim is to have a stable and flexible foundation, combined with sane 
   * [Windows and MacOS](https://getfedora.org/en/workstation/download/)
   * [Linux](https://flathub.org/apps/details/org.fedoraproject.MediaWriter)
 * In Fedora Media Writer click Custom image and select the `Everything` ISO.
-If your system is unable to detect the bootable USB try enabling `Legacy USB` in **UEFI/BIOS**.
+\ If your system is unable to detect the bootable USB try enabling `Legacy USB` in **UEFI/BIOS**.
 
 ### 2. Installation setup
 If the USB is booted properly, a prompt will show up asking you to install Fedora. \
