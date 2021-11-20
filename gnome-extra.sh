@@ -32,15 +32,3 @@ sudo -u gdm gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 sudo -u gdm gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 xhost -SI:localuser:gdm
 "
-
-#Remove gnome-tour? (check workspace switching)
-
-#Enable installed extensions on next boot
-
-#Disable mouse accel for all users using gsettings
-
-#Download and set wallpaper
-
-#Make adwaita-dark the theme for all users (gsettings)
-
-#Make papirus icon theme the default for all users
