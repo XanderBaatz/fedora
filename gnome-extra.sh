@@ -4,7 +4,7 @@
 #install base packages
 sudo dnf install -y \
 gnome-extensions-app chrome-gnome-shell gnome-tweaks @development-tools \
-gnome-terminal-nautilus xdg-user-dirs xdg-user-dirs-gtk ffmpegthumbnailer file-roller-nautilus \
+gnome-terminal-nautilus xdg-user-dirs xdg-user-dirs-gtk ffmpegthumbnailer file-roller-nautilus gtkhash-nautilus \
 gnome-calculator gnome-system-monitor gnome-disk-utility gedit google-noto-emoji-color-fonts \
 gnome-shell-extension-appindicator gnome-shell-extension-gsconnect \
 papirus-icon-theme dbus-x11
