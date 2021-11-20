@@ -16,9 +16,9 @@ The general aim is to have a stable and flexible foundation, combined with sane 
    **WARNING:** Backup any pre-existing files on the USB!
 * Fedora Media Writer for:
   * [Windows and MacOS](https://getfedora.org/en/workstation/download/)
-  * [Linux](https://flathub.org/apps/details/org.fedoraproject.MediaWriter) \
+  * [Linux](https://flathub.org/apps/details/org.fedoraproject.MediaWriter)
 
-In Fedora Media Writer click Custom image and select the `Everything` ISO.
+In Fedora Media Writer click Custom image and select the `Everything` ISO. \
 If your system is unable to detect the bootable USB try enabling `Legacy USB` in **UEFI/BIOS**.
 
 ### 2. Installation setup
