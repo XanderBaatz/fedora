@@ -16,6 +16,8 @@ The general aim is to have a stable and flexible foundation, combined with sane 
      Fedora Media Writer for:
       * [Windows and MacOS](https://getfedora.org/en/workstation/download/)
       * [Linux](https://flathub.org/apps/details/org.fedoraproject.MediaWriter)
+* If your PC is unable to detect the bootable USB 
+
 ### 2. Installation setup
 If the USB is booted properly, a prompt will show up asking you to install Fedora. \
 Select **Test this media & install Fedora**. This will scan the installation media and check for errors, before proceeding to the actual installation setup.
