@@ -11,13 +11,14 @@ The general aim is to have a stable and flexible foundation, combined with sane 
 
 ## Installation Guide
 ### 1. Download and install the ISO
-1. Go to [Fedora Alternative Downloads](https://alt.fedoraproject.org/) and download the `Everything` iso.
+1. Go to [Fedora Alternative Downloads](https://alt.fedoraproject.org/) and download the `Everything` ISO.
 2. Burn the ISO to a USB drive. It's recommended to use the official Fedora Media Writer tool from Red Hat. \
    **WARNING:** Backup any pre-existing files on the USB!
 * Fedora Media Writer for:
   * [Windows and MacOS](https://getfedora.org/en/workstation/download/)
   * [Linux](https://flathub.org/apps/details/org.fedoraproject.MediaWriter)
-* If your system is unable to detect the bootable USB try enabling Legacy USB in UEFI/BIOS.
+* In Fedora Media Writer click Custom image and select the `Everything` ISO.
+* If your system is unable to detect the bootable USB try enabling `Legacy USB` in **UEFI/BIOS**.
 
 ### 2. Installation setup
 If the USB is booted properly, a prompt will show up asking you to install Fedora. \
