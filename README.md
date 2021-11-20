@@ -13,7 +13,7 @@ The general aim is to have a stable and flexible foundation, combined with sane 
 ### 1. Download and install the ISO
 1. Go to [Fedora Alternative Downloads](https://alt.fedoraproject.org/) and download the **Everything** iso.
 2. Burn the ISO to a USB drive. Backup any pre-existing files on the USB.
-    1. On Windows you can use Fedora's official Media Writer tool to burn the ISO to the USB drive.
+    * It's recommended to use the official Media Writer tool from Fedora.
 ### 2. Installation setup
 If the USB is booted properly, a prompt will show up asking you to install Fedora. \
 Select **Test this media & install Fedora**. This will scan the installation media and check for errors, before proceeding to the actual installation setup.
