@@ -14,9 +14,9 @@ The general aim is to have a stable and flexible foundation, combined with sane 
 1. Go to [Fedora Alternative Downloads](https://alt.fedoraproject.org/) and download the `Everything` iso.
 2. Burn the ISO to a USB drive. It's recommended to use the official Fedora Media Writer tool from Red Hat. \
    **WARNING:** Backup any pre-existing files on the USB!
-  * Fedora Media Writer for:
-    * [Windows and MacOS](https://getfedora.org/en/workstation/download/)
-    * [Linux](https://flathub.org/apps/details/org.fedoraproject.MediaWriter)
+* Fedora Media Writer for:
+  * [Windows and MacOS](https://getfedora.org/en/workstation/download/)
+  * [Linux](https://flathub.org/apps/details/org.fedoraproject.MediaWriter)
 3. Hello lmao
 
 ### 2. Installation setup
