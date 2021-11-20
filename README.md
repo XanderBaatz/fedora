@@ -1,6 +1,6 @@
 # Fedora Minimal (testing phase)
 
-Fedora Minimal is an attempt to create a minmal base, housing the tools to an essential and functional system. \
+Fedora Minimal is an attempt to create a minimal base, housing the tools to an essential and functional system. \
 The general aim is to have a stable and flexible foundation, combined with sane defaults and broad compatibility.
 
 * Based on Fedora Everything (EV) image.
