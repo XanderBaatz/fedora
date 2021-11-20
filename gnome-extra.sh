@@ -27,16 +27,11 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,m
 #gsettings (GDM)
 sudo sh -c "
 xhost +SI:localuser:gdm
-sudo su gdm -s /bin/bash
-gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
-gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
-exit
-"
-
+sudo -u gdm gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+sudo -u gdm gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+sudo -u gdm gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 sudo xhost -SI:localuser:gdm
-
-echo "hello, testing!"
+"
 
 #Remove gnome-tour? (check workspace switching)
 
