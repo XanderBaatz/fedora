@@ -13,11 +13,6 @@ papirus-icon-theme dbus-x11
 sudo dnf install -y --setopt=install_weak_deps=False \
 gnome-shell-extension-pop-shell xprop
 
-#Open gsconnect ports in firewalld to enable connection
-#sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
-#sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
-#sudo systemctl restart firewalld.service
-
 #gsettings
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
