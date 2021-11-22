@@ -26,7 +26,7 @@ If the USB is booted properly, a prompt will show up asking to install Fedora. \
 Select `Test this media & install Fedora`. This will scan the installation media and check for errors, before proceeding to the actual installation setup.
 
 On the initial **WELCOME TO FEDORA** page, simply select your preferred language and hit `Continue`. \
-It is recommended to install the system in English if possible. You can always change the language later.
+* It is recommended to install the system in English if possible. You can always change the language later.
 
 #### Localization
 * Configure preferred `Keyboard`, `Language Support` and `Time & Date` settings.
