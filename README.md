@@ -32,8 +32,9 @@ On the initial **WELCOME TO FEDORA** page, simply select your preferred language
 * Configure preferred `Keyboard`, `Language Support` and `Time & Date` settings.
 
 #### Software
-* Set the **Installation Source** to: *Closest mirror*.
-* In **Software Selection** under **Base Environment** select *Minimal Install*.
+* Set the **Installation Source** to: `Closest mirror`.
+* In **Software Selection** under **Base Environment** select:
+  * `Minimal Install`.
 * Under **Additional Software for Selected Environment** tick *Common NetworkManager Submodules*.
 
 #### System
