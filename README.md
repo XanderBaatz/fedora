@@ -34,8 +34,10 @@ On the initial **WELCOME TO FEDORA** page, simply select your preferred language
 #### Software
 * Set the **Installation Source** to: `Closest mirror`.
 * In **Software Selection** under **Base Environment** select:
-  - [X] `Minimal Install`.
-* Under **Additional Software for Selected Environment** tick *Common NetworkManager Submodules*.
+  - [X] `Minimal Install`
+* Under **Additional Software for Selected Environment** tick:
+  - [X] `Standard`
+  - [X] `Common NetworkManager Submodules`
 
 #### System
 1. In **Installation Destination**, choose your preferred installation disk and under **Storage Configuration** click *Custom*, and then click **Done** in the top left.
