@@ -41,7 +41,7 @@ On the initial **WELCOME TO FEDORA** page, simply select your preferred language
 
 #### System
 1. In **Installation Destination**, choose your preferred installation disk and under **Storage Configuration** click *Custom*, and then click **Done** in the top left.
-2. Set the partitioning scheme to **Btrfs**.
+2. Set the partitioning scheme to **Btrfs** or **Standard**.
 3. Click on the `+` icon to create a new **Mount Point**.
 4. First select `/boot/efi` or `/boot` under **Mount Point**. Most systems are on EFI nowadays, which means `/boot/efi` is one you should pick. If you're unsure, you can always create both.
     * The **Desired Capacity** for an EFI partition is usually 550 MB.
