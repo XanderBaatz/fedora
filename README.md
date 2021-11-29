@@ -24,9 +24,11 @@ Now reboot into BIOS/UEFI firmware settings:
     * `sudo systemctl reboot --firmware-setup`
   * On Windows you can access BIOS/UEFI by running the following command in an elevated PowerShell or CMD prompt:
     * `shutdown.exe /r /o`
-    * then go to **Advanced options** > **UEFI Firmware Settings** and finally click restart.
+    * then go to **Advanced options** > **UEFI Firmware Settings** and finally click **Restart**.
 
-If your system is unable to detect the bootable USB try enabling `Legacy USB` in **UEFI/BIOS**.
+BIOS/UEFI firmware settings menus can look and navigate very differently and it may vary from system to system. Generally proceed as follows: \
+In the BIOS/UEFI Firmware Settings navigate to where boot order/priority control resides and re-arrange the order, so that the bootable Linux USB is at the very top. Then save the settings and reboot.
+* If your system is unable to detect the bootable USB try enabling `Legacy USB` in **UEFI/BIOS**.
 
 ### 2. Installation setup
 If the USB is booted properly, a prompt will show up asking to install Fedora. \
