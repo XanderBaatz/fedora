@@ -27,3 +27,7 @@ sudo -u gdm gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 sudo -u gdm gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 xhost -SI:localuser:gdm
 "
+
+#gsconnect firewalld support
+# https://fossies.org/linux/gnome-shell-extension-gsconnect/data/firewalld/gsconnect.xml
+# https://firewalld.org/documentation/howto/add-a-service.html
