@@ -24,6 +24,7 @@ Now reboot into BIOS/UEFI firmware settings:
     * `sudo systemctl reboot --firmware-setup`
   * On Windows you can access BIOS/UEFI by running the following command in an elevated PowerShell or CMD prompt:
     * `shutdown.exe /r /o`
+    * then go to **Advanced options** > **UEFI Firmware Settings** and finally click restart.
 
 If your system is unable to detect the bootable USB try enabling `Legacy USB` in **UEFI/BIOS**.
 
