@@ -27,7 +27,7 @@ Now reboot into BIOS/UEFI firmware settings:
     * then go to **Advanced options** > **UEFI Firmware Settings** and finally click **Restart**.
 
 BIOS/UEFI firmware settings menus can look and navigate very differently and it may vary from system to system. Generally proceed as follows: \
-* Navigate to where boot order/priority control resides and re-arrange the order, so that the bootable Linux USB is at the very top. Then save the settings and reboot.
+  Navigate to where boot order/priority control resides and re-arrange the order, so that the bootable Linux USB is at the very top. Then save the settings and reboot.
   * **NOTE:** If your system is unable to detect the bootable USB try enabling `Legacy USB` in **UEFI/BIOS**.
 
 ### 2. Installation setup
