@@ -23,8 +23,8 @@ Now reboot into BIOS/UEFI firmware settings.
   * On modern Linux systems running systemd you can access BIOS/UEFI by using the command:
     * `sudo systemctl reboot --firmware-setup`
   * On Windows you can access BIOS/UEFI by running the following command in an elevated PowerShell or CMD prompt:
-    * `shutdown.exe /r /o`
-\
+    * `shutdown.exe /r /o` \
+
 If your system is unable to detect the bootable USB try enabling `Legacy USB` in **UEFI/BIOS**.
 
 ### 2. Installation setup
