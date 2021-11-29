@@ -19,7 +19,7 @@ The general aim is to have a stable and flexible foundation, combined with sane 
   * [Linux](https://flathub.org/apps/details/org.fedoraproject.MediaWriter)
 
 In Fedora Media Writer click Custom image and select the `Everything` ISO, and then proceed to write it to the USB. \
-Now reboot into BIOS/UEFI firmware settings.
+Now reboot into BIOS/UEFI firmware settings:
   * On modern Linux systems running systemd you can access BIOS/UEFI by using the command:
     * `sudo systemctl reboot --firmware-setup`
   * On Windows you can access BIOS/UEFI by running the following command in an elevated PowerShell or CMD prompt:
