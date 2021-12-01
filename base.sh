@@ -8,6 +8,9 @@
 # Check for updates
 sudo sh -c 'dnf --refresh check-upgrade -y && dnf upgrade -y'
 
+#Test
+# sudo dnf --setopt=group_package_types=mandatory,default,conditional groupinstall core
+
 #Required repositories
 sudo dnf install -y \
 https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
