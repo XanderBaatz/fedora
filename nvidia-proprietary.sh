@@ -6,6 +6,9 @@
 
 pkgs="xorg-x11-drv-nouveau"
 
+#add Fedora Third Party repositories for Nvidia driver
+sudo dnf install -y fedora-workstation-repositories
+
 #remove nouveau driver package
 sudo dnf remove -y ${pkgs}
 
