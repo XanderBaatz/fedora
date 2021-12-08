@@ -13,7 +13,7 @@ sudo dnf install -y fedora-workstation-repositories
 sudo fedora-third-party enable
 
 #install nvidia driver, nvidia settings and nvidia 32 bit support (e.g. for Steam games)
-sudo dnf -y install nvidia-driver nvidia-settings
+sudo dnf -y install nvidia-driver nvidia-settings nvidia-driver-libs.i686
 
 #remove nouveau driver package
 sudo dnf remove -y ${pkgs}
