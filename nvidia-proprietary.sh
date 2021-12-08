@@ -3,8 +3,11 @@
 
 # Credits: https://gist.github.com/sebastiaanfranken/61474c1929ab256e4247a7a4a73262ca
 #          https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/#nvidia-install
+#          https://negativo17.org/nvidia-driver
 
 pkgs="xorg-x11-drv-nouveau"
+
+##########
 
 #add Fedora Third Party repositories for Nvidia driver
 sudo dnf install -y fedora-workstation-repositories
@@ -14,6 +17,10 @@ sudo fedora-third-party enable
 
 #install nvidia driver, nvidia settings and nvidia 32 bit support (e.g. for Steam games)
 sudo dnf -y install nvidia-driver nvidia-settings nvidia-driver-libs.i686
+
+##########
+
+#
 
 #remove nouveau driver package
 sudo dnf remove -y ${pkgs}
