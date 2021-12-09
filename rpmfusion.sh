@@ -1,5 +1,5 @@
 #!/bin/sh
-# wget -qO- https://git.io/XXXXX | sh
+# wget -qO- https://git.io/JDtlC | sh
 
 #install repositories and third-party repository manager
 sudo dnf install -y \
