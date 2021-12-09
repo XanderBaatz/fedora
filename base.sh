@@ -13,13 +13,5 @@
 # Check for updates
 sudo sh -c 'dnf --refresh check-upgrade -y && dnf upgrade -y'
 
-#Test
-# sudo dnf --setopt=group_package_types=mandatory,default,conditional groupinstall core
-
-#Required repositories
-sudo dnf install -y \
-https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-
 #audio, bluetooth, wi-fi
 sudo dnf install -y @hardware-support @networkmanager-submodules @multimedia
