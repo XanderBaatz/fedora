@@ -3,7 +3,7 @@
 
 sudo sh -c "cat << EOF > /etc/yum.repos.d/brave-browser.repo
 [brave-browser]
-name=Brave Browser based on Chromium
+name=Brave Browser
 baseurl=https://brave-browser-rpm-release.s3.brave.com/x86_64/
 skip_if_unavailable=True
 gpgcheck=1
