@@ -6,7 +6,6 @@
 # https://bluehatrecord.wordpress.com/2015/10/06/the-hidden-dnf-groups-of-the-fedora-repositories/
 
 #check for root privileges
-#!/bin/sh
 if [ "$(whoami)" != "root" ]; then
 	echo "Root priviliges required to run commands."
 	echo -n "Is this ok [y/N]: "
