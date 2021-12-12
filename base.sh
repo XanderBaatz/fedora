@@ -1,6 +1,6 @@
 #!/bin/sh
 # wget -qO- https://git.io/J1Keq | sh
-# curl -s https://git.io/J1Keq | sh
+# curl -fsSL https://git.io/J1Keq | sh
 
 #Credits:
 # https://forums.fedoraforum.org/showthread.php?324485-steps-After-install
