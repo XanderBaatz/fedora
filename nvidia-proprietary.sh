@@ -20,7 +20,7 @@ sudo dnf -y install nvidia-driver nvidia-settings nvidia-driver-libs.i686
 
 ##########
 
-#
+#--disablerepo rpmfusion-*
 
 #remove nouveau driver package
 sudo dnf remove -y ${pkgs}
