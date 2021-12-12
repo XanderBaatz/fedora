@@ -19,7 +19,7 @@ if [ "$(whoami)" != "root" ]; then
 fi
 
 # Check for updates
-sudo sh -c 'dnf --refresh check-upgrade -y && dnf upgrade -y'
+dnf --refresh check-upgrade -y && dnf upgrade -y
 
 #audio, bluetooth, wi-fi
-sudo dnf install -y @hardware-support @networkmanager-submodules @multimedia
+dnf install -y @hardware-support @networkmanager-submodules @multimedia
