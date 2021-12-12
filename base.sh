@@ -6,7 +6,7 @@
 # https://bluehatrecord.wordpress.com/2015/10/06/the-hidden-dnf-groups-of-the-fedora-repositories/
 
 #check for root privileges
-if [ "$(whoami)" != "root" ]; then
+if [ $(id -u) != 0 ]; then
   echo ""
   echo "Root priviliges required to run commands."
   exec sudo -- "$0" "$@"
