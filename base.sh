@@ -7,8 +7,8 @@
 
 #check for root privileges
 if [ "$(whoami)" != "root" ]; then
-echo "Root priviliges required to run commands."
-exec sudo -- "$0" "$@"
+  echo "Root priviliges required to run commands."
+  exec sudo -- "$0" "$@"
 fi
 
 # Check for updates
