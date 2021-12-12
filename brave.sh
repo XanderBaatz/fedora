@@ -1,5 +1,6 @@
 #!/bin/sh
 # wget -qO- https://git.io/JXr5G | sh
+# curl -fsSL https://git.io/JXr5G | sh
 
 sudo sh -c "cat << EOF > /etc/yum.repos.d/brave-browser.repo
 [brave-browser]
