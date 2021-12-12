@@ -73,6 +73,7 @@ Run in chronological order:
 
 1. Run `base.sh`
 * (Optional) Run `nvidia-proprietary.sh`
-2. Run `gnome.sh`
+2. Run `rpmfusion.sh`
+* (Recommended) Run `gnome.sh`
 * (Optional) Run `gnome-extra.sh`
 * (Optional) Run `brave.sh`
