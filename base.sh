@@ -7,15 +7,8 @@
 
 #check for root privileges
 if [ "$(whoami)" != "root" ]; then
-	echo "Root priviliges required to run commands."
-	echo -n "Is this ok [y/N]: "
-	read answer
-
-	if [ "$answer" != "${answer#[Yy]}" ] ;then
-	    exec sudo -- "$0" "$@"
-	else
-	    echo "Operation aborted." && exit $1
-	fi
+echo "Root priviliges required to run commands."
+exec sudo -- "$0" "$@"
 fi
 
 # Check for updates
