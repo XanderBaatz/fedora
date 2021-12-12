@@ -15,3 +15,6 @@ type=dnf
 [rpmfusion-nonfree]
 type=dnf
 EOF"
+
+#enable repos
+sudo fedora-third-party enable
