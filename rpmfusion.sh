@@ -2,6 +2,11 @@
 # wget -qO- https://git.io/JDtlC | sh
 # curl -fsSL https://git.io/JDtlC | sh
 
+#prompt to select what repos you want enabled
+# Minimal: only base rpmfusion free and nonfree
+# Recommended: fedora workstation repos + Minimal
+# All: rpmfusion tainted and all of the above
+
 #install repositories and third-party repository manager
 sudo dnf install -y \
 fedora-third-party \
