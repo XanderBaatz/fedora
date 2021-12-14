@@ -7,6 +7,15 @@
 
 set -e
 
+# env args
+: "${minimal:=false}"
+
+_msg() {
+    echo "=>" "$@"
+}
+
+
+
 #install base packages
 sudo dnf install -y --setopt=group_package_types=mandatory --setopt=exclude=gnome-tour \
 @critical-path-gnome nautilus
