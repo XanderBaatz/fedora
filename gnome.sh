@@ -15,7 +15,8 @@ if [ $(id -u) != 0 ]; then
 fi
 
 # env args
-: "${minimal:=false}"
+: "${apps:=true}"
+: "${themes:=true}"
 : "${uninstall:=false}"
 
 _msg() {
@@ -31,6 +32,18 @@ _install() {
     _msg "Installing packages ..."
     sudo dnf install -y
 }
+
+if [ "$themes" != "true" ]; then
+    _install "$ICON_THEMES"
+else
+    _uninstall "$ICON_THEMES"
+fi
+
+if [ "$uninstall" = "false" ]; then
+    _install "$ICON_THEMES"
+else
+    _uninstall "$ICON_THEMES"
+fi
 
 #install base packages
 sudo dnf install -y --setopt=group_package_types=mandatory --setopt=exclude=gnome-tour \
