@@ -101,13 +101,17 @@ _msg() {
     echo "=>" "$@"
 }
 
+_load() {
+    while :;do for s in / - \\ \|; do printf "\r$s";sleep .1;done;done
+}
+
 _uninstall() {
     _msg "Removing packages ..."
     echo sudo dnf autoremove -y ${pkgs} | sh
 }
 
 _install() {
-    _msg "Installing packages ..." && while :;do for s in / - \\ \|; do printf "\r$s";sleep .1;done;done
+    _msg "Installing packages ..." && _load
     echo sudo dnf install -y -q --setopt=exclude=gnome-tour ${dnf_opts} ${pkgs} | sh
     # Enable gdm display manager and enable graphical desktop
     echo sudo systemctl enable gdm | sh
