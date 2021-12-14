@@ -48,13 +48,6 @@ do
 done
 
 
-# variables
-: "${norminst:=true}"
-: "${themes:=true}"
-: "${store:=false}"
-: "${uninstall:=false}"
-
-
 ### package list compiler
 
 pkgs="@critical-path-gnome"
