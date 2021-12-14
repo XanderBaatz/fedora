@@ -13,11 +13,6 @@ if [ $(id -u) != 0 ]; then
   exec sudo -- "$0" "$@"
 fi
 
-# variables
-: "${norminst:=true}"
-: "${themes:=true}"
-: "${store:=false}"
-: "${uninstall:=false}"
 
 ### installer script
 
@@ -51,6 +46,13 @@ do
        usage ;;
   esac
 done
+
+
+# variables
+: "${norminst:=true}"
+: "${themes:=true}"
+: "${store:=false}"
+: "${uninstall:=false}"
 
 
 ### package list compiler
