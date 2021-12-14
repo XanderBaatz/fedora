@@ -4,6 +4,7 @@
 
 # Credits: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 #          https://www.certdepot.net/rhel7-get-started-package-groups/
+#          https://www.shellscript.sh/tips/getopt/index.html
 
 set -e
 
@@ -16,7 +17,6 @@ fi
 
 # env args
 : "${apps:=true}"
-: "${themes:=true}"
 : "${uninstall:=false}"
 
 _msg() {
@@ -33,10 +33,8 @@ _install() {
     sudo dnf install -y
 }
 
-if [ "$themes" != "true" ]; then
-    _install "$ICON_THEMES"
-else
-    _uninstall "$ICON_THEMES"
+if [ "$apps" = "true" ]; then
+    pkgs=""
 fi
 
 if [ "$uninstall" = "false" ]; then
