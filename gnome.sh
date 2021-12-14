@@ -103,7 +103,6 @@ _install() {
     _msg "Installing packages ..."
     echo sudo dnf install -y ${dnf_opts} ${pkgs} | sh
     # Enable gdm display manager and enable graphical desktop
-    echo ""
     echo sudo systemctl enable gdm | sh
     echo sudo systemctl set-default graphical.target | sh
 }
