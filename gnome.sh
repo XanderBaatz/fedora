@@ -7,14 +7,30 @@
 
 set -e
 
+#check for root privileges
+if [ $(id -u) != 0 ]; then
+  echo ""
+  echo "Root priviliges required to run commands."
+  exec sudo -- "$0" "$@"
+fi
+
 # env args
 : "${minimal:=false}"
+: "${uninstall:=false}"
 
 _msg() {
     echo "=>" "$@"
 }
 
+_uninstall() {
+    _msg "Removing packages ..."
+    sudo dnf autoremove -y
+}
 
+_install() {
+    _msg "Installing packages ..."
+    sudo dnf install -y
+}
 
 #install base packages
 sudo dnf install -y --setopt=group_package_types=mandatory --setopt=exclude=gnome-tour \
