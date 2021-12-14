@@ -102,7 +102,21 @@ _msg() {
 }
 
 _load() {
-    while $1 ;do for s in / - \\ \|; do printf "\r$s";sleep .1;done;done
+	    sp="/-\|"
+	sc=0
+	spin() {
+	   printf "\b${sp:sc++:1}"
+	   ((sc==${#sp})) && sc=0
+	}
+	endspin() {
+	   printf "\r%s\n" "$@"
+	}
+
+	until work_done; do
+	   spin
+	   $1
+	done
+	endspin
 }
 
 _uninstall() {
