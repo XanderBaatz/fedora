@@ -107,7 +107,7 @@ _uninstall() {
 }
 
 _install() {
-    _msg "Installing packages ..."
+    _msg "Installing packages ..." && while :;do for s in / - \\ \|; do printf "\r$s";sleep .1;done;done
     echo sudo dnf install -y -q --setopt=exclude=gnome-tour ${dnf_opts} ${pkgs} | sh
     # Enable gdm display manager and enable graphical desktop
     echo sudo systemctl enable gdm | sh
