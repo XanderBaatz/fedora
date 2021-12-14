@@ -62,7 +62,6 @@ if [ "$norminst" != "false" ]; then
         gnome-terminal-nautilus \
 	xdg-user-dirs \
 	xdg-user-dirs-gtk \
-	ffmpegthumbnailer \
 	file-roller-nautilus \
 	gtkhash-nautilus \
 	gnome-calculator \
