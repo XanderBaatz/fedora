@@ -102,7 +102,7 @@ _msg() {
 }
 
 _load() {
-    while :;do for s in / - \\ \|; do printf "\r$s";sleep .1;done;done
+    while $1 ;do for s in / - \\ \|; do printf "\r$s";sleep .1;done;done
 }
 
 _uninstall() {
