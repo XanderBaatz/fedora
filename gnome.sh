@@ -1,6 +1,8 @@
 #!/bin/sh
 # wget -qO- https://git.io/JXD3d | sh
 
+set -e
+
 # https://www.certdepot.net/rhel7-get-started-package-groups/
 
 #install base packages
