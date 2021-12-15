@@ -126,7 +126,7 @@ _uninstall() {
 
 _install() {
     _msg "Installing packages ..."
-    echo sudo dnf install -y -q --setopt=exclude=gnome-tour ${dnf_opts} ${pkgs} | sh
+    echo sudo dnf install -y --setopt=exclude=gnome-tour ${dnf_opts} ${pkgs} | sh
     # Enable gdm display manager and enable graphical desktop
     echo sudo systemctl enable gdm | sh
     echo sudo systemctl set-default graphical.target | sh
