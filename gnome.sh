@@ -1,5 +1,5 @@
 #!/bin/sh
-# wget -q https://git.io/JXD3d -O gnome.sh | sh
+# wget -q https://git.io/JXD3d -O gnome.sh | chmod +x gnome.sh && ./gnome.sh
 
 # Credits: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 #          https://www.certdepot.net/rhel7-get-started-package-groups/
