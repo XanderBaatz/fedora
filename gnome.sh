@@ -12,6 +12,10 @@ if [ $(id -u) -ne 0 ]; then
   exec sudo -- "$0" "$@"
 fi
 
+_msg() {
+    echo "=>" "$@"
+}
+
 
 ### installer script
 
@@ -96,10 +100,6 @@ fi
 
 
 # functions
-
-_msg() {
-    echo "=>" "$@"
-}
 
 _load() {
 	    sp="/-\|"
