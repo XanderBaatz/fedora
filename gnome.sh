@@ -57,7 +57,7 @@ pkgs="@critical-path-gnome"
 
 if [ "$store" != "true" ]; then
   _msg "Store will not be installed."
-  dnf_opts="--setopt=group_package_types=mandatory"
+  dnf_opts="--setopt="group_package_types=mandatory""
 else
   _msg "Store will be installed."
 fi
@@ -126,7 +126,7 @@ _uninstall() {
 
 _install() {
     _msg "Installing packages ..."
-    echo sudo dnf install -y --setopt=exclude=gnome-tour ${dnf_opts} ${pkgs} | sh
+    echo sudo dnf install -y --setopt="exclude=gnome-tour" ${dnf_opts} ${pkgs} | sh
     # Enable gdm display manager and enable graphical desktop
     echo sudo systemctl enable gdm | sh
     echo sudo systemctl set-default graphical.target | sh
