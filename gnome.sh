@@ -52,14 +52,14 @@ done
 pkgs="@critical-path-gnome"
 
 if [ "$store" != "true" ]; then
-  echo "Store will not be installed."
+  _msg "Store will not be installed."
   dnf_opts="--setopt=group_package_types=mandatory"
 else
-  echo "Store will be installed."
+  _msg "Store will be installed."
 fi
 
 if [ "$norminst" != "false" ]; then
-  echo "Normal installation."
+  _msg "Normal installation."
   pkgs="$pkgs \
         @development-tools \
         nautilus \
@@ -82,16 +82,16 @@ if [ "$norminst" != "false" ]; then
 	gvfs-mtp \
 	"
 else
-  echo "Minimal installation."
+  _msg "Minimal installation."
 fi
 
 if [ "$themes" != "false" ]; then
-  echo "Themes will be installed."
+  _msg "Themes will be installed."
   pkgs="$pkgs \
 	papirus-icon-theme \
 	"
 else
-  echo "Themes will not be installed."
+  _msg "Themes will not be installed."
 fi
 
 
