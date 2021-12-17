@@ -79,6 +79,7 @@ if [ "$norminst" != "false" ]; then
 	gnome-shell-extension-appindicator \
 	dbus-x11 \
 	gvfs-goa \
+	gvfs-mtp \
 	"
 else
   echo "Minimal installation."
