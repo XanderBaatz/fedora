@@ -6,7 +6,7 @@
 #          https://www.shellscript.sh/tips/getopt/index.html
 
 #check for root privileges
-if [ $(id -u) != 0 ]; then
+if [ $(id -u) -ne 0 ]; then
   echo ""
   echo "Root priviliges required to run commands."
   exec sudo -- "$0" "$@"
