@@ -24,18 +24,18 @@ EOF"
 
 tainted() {
   # Install rpmfusion tainted repos
-  #sudo dnf install -y \
-  #rpmfusion-free-release-tainted \
-  #rpmfusion-nonfree-release-tainted
+  sudo dnf install -y \
+  rpmfusion-free-release-tainted \
+  rpmfusion-nonfree-release-tainted
 
   # append tainted repos to fedora-third-party
-  #sudo sh -c "cat << EOF >> /usr/lib/fedora-third-party/conf.d/rpmfusion.conf
-  #[rpmfusion-free-tainted]
-  #type=dnf
+  sudo sh -c "cat << EOF >> /usr/lib/fedora-third-party/conf.d/rpmfusion.conf
+  [rpmfusion-free-tainted]
+  type=dnf
 
-  #[rpmfusion-nonfree-tainted]
-  #type=dnf
-  #EOF"
+  [rpmfusion-nonfree-tainted]
+  type=dnf
+  EOF"
 }
 
 #enable repos
