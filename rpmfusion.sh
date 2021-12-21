@@ -1,6 +1,6 @@
 #!/bin/sh
-# wget -qO- https://git.io/JDtlC | sh
-# curl -fsSL https://git.io/JDtlC | sh
+
+# wget -q https://git.io/JDtlC -O rpmfusion.sh | chmod +x rpmfusion.sh && ./rpmfusion.sh
 
 
 # check for root privileges
@@ -52,12 +52,12 @@ _normal() {
 
   # add rpmfusion entry configs to fedora-third-party
   sudo sh -c "cat << EOF > /usr/lib/fedora-third-party/conf.d/rpmfusion.conf
-  [rpmfusion-free]
-  type=dnf
+[rpmfusion-free]
+type=dnf
 
-  [rpmfusion-nonfree]
-  type=dnf
-  EOF"
+[rpmfusion-nonfree]
+type=dnf
+EOF"
 }
 
 _workstation() {
@@ -74,12 +74,13 @@ _tainted() {
 
   # append tainted repos to fedora-third-party
   sudo sh -c "cat << EOF >> /usr/lib/fedora-third-party/conf.d/rpmfusion.conf
-  [rpmfusion-free-tainted]
-  type=dnf
 
-  [rpmfusion-nonfree-tainted]
-  type=dnf
-  EOF"
+[rpmfusion-free-tainted]
+type=dnf
+
+[rpmfusion-nonfree-tainted]
+type=dnf
+EOF"
 }
 
 _enable_repos() {
