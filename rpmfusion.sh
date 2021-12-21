@@ -45,7 +45,7 @@ done
 # install repositories and third-party repository manager
 
 _normal() {
-  sudo dnf install -y \
+  sudo dnf install -y -q \
   fedora-third-party \
   https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
   https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm \
@@ -62,13 +62,13 @@ EOF"
 
 _workstation() {
   # Install rpmfusion tainted repos
-  sudo dnf install -y \
+  sudo dnf install -y -q \
   fedora-workstation-repositories
 }
 
 _tainted() {
   # Install rpmfusion tainted repos
-  sudo dnf install -y \
+  sudo dnf install -y -q \
   rpmfusion-free-release-tainted \
   rpmfusion-nonfree-release-tainted
 
