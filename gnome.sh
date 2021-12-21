@@ -27,7 +27,7 @@ usage() {
   exit 2
 }
 
-PARSED_ARGUMENTS=$(getopt -a -n "$0" -o mns --long minimal,nothemes,store -- "$@")
+PARSED_ARGUMENTS=$(getopt -a -n "$0" -o mnsu --long minimal,nothemes,store,uninstall -- "$@")
 VALID_ARGUMENTS=$?
 if [ "$VALID_ARGUMENTS" != "0" ]; then
   usage
