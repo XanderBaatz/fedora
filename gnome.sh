@@ -20,10 +20,7 @@ _msg() {
 ### installer script
 
 usage() {
-  echo "Usage: "$0" [ -m | --minimal ]
-  		     [ -n | --nothemes ]
-  		     [ -s | --storeinclude ]
-  		     [ -u | --uninstall ]"
+  echo "usage: "$0" [-m | --minimal] [-n | --nothemes] [-s | --storeinclude] [-u | --uninstall]"
   exit 2
 }
 
@@ -41,10 +38,9 @@ do
     -n | --nothemes)      themes=false       ; shift   ;;
     -s | --storeinclude)  store=true         ; shift   ;;
     -u | --uninstall)     uninstall=true     ; shift   ;;
-    # -- means the end of the arguments; drop this, and break out of the while loop
+    #
     --) shift; break ;;
-    # If invalid options were passed, then getopt should have reported an error,
-    # which we checked as VALID_ARGUMENTS when getopt was called...
+    #
     *) echo "Unexpected option: $1 - invalid argument."
        usage ;;
   esac
@@ -71,20 +67,20 @@ if [ "$norminst" != "false" ]; then
         chrome-gnome-shell \
         gnome-tweaks \
         gnome-terminal-nautilus \
-	xdg-user-dirs \
-	xdg-user-dirs-gtk \
-	file-roller-nautilus \
-	gtkhash-nautilus \
-	gnome-calculator \
-	gnome-system-monitor \
-	gnome-disk-utility \
-	gedit \
-	google-noto-emoji-color-fonts \
-	gnome-shell-extension-appindicator \
-	dbus-x11 \
-	gvfs-goa \
-	gvfs-mtp \
-	"
+        xdg-user-dirs \
+        xdg-user-dirs-gtk \
+        file-roller-nautilus \
+        gtkhash-nautilus \
+        gnome-calculator \
+        gnome-system-monitor \
+        gnome-disk-utility \
+        gedit \
+        google-noto-emoji-color-fonts \
+        gnome-shell-extension-appindicator \
+        dbus-x11 \
+        gvfs-goa \
+        gvfs-mtp \
+        "
 else
   _msg "Minimal installation."
 fi
