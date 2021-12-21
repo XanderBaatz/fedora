@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# wget -q https://git.io/JDtlC -O rpmfusion.sh | chmod +x rpmfusion.sh && ./rpmfusion.sh
+# wget -q https://git.io/JDtlC -O rpmfusion.sh && chmod +x rpmfusion.sh && ./rpmfusion.sh
 
 
 # check for root privileges
