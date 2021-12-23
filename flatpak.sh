@@ -1,6 +1,6 @@
 #!/bin/sh
-# wget -qO- https://git.io/XXXXX | sh
-# curl -fsSL https://git.io/XXXXX | sh
+# wget -qO- https://git.io/Jykln | sh
+# curl -fsSL https://git.io/Jykln | sh
 
 #check for root privileges
 if [ $(id -u) != 0 ]; then
