@@ -8,8 +8,6 @@
 
 #check for root privileges
 if [ $(id -u) != 0 ]; then
-  echo ""
-  echo "Root priviliges required to run commands."
   exec sudo -- "$0" "$@"
 fi
 
