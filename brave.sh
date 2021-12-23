@@ -2,6 +2,11 @@
 # wget -qO- https://git.io/JXr5G | sh
 # curl -fsSL https://git.io/JXr5G | sh
 
+#check for root privileges
+if [ $(id -u) != 0 ]; then
+  exec sudo -- "$0" "$@"
+fi
+
 sudo sh -c "cat << EOF > /etc/yum.repos.d/brave-browser.repo
 [brave-browser]
 name=Brave Browser
