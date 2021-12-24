@@ -45,35 +45,34 @@ do
   esac
 done
 
-
+#if rpmfusion or rpmfusion-nvidia not detected, add rpmfusion-nvidia repo
 
 ##########
 
 #add Fedora Third Party repositories for Nvidia driver
-sudo dnf install -y fedora-workstation-repositories
+#sudo dnf install -y fedora-workstation-repositories
 
 #enable third party repositories
-sudo fedora-third-party enable
+#sudo fedora-third-party enable
 
 #install nvidia driver, nvidia settings and nvidia 32 bit support (e.g. for Steam games)
-sudo dnf -y install nvidia-driver nvidia-settings nvidia-driver-libs.i686
+#sudo dnf -y install nvidia-driver nvidia-settings nvidia-driver-libs.i686
 
 ##########
 
 _install() {
-    _msg "Installing packages ..."
-    echo sudo dnf install -y --setopt="exclude=gnome-tour" ${dnf_opts} ${pkgs} | sh
-    # Enable gdm display manager and enable graphical desktop
-    echo sudo systemctl enable gdm | sh
-    echo sudo systemctl set-default graphical.target | sh
+    _msg "Installing Nvidia driver and dependencies ..."
+    #install proprietary nvidia driver and optional packages to enable cuda/nvenc
+    sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda
 }
 
 _exclNouveau() {
-    _msg "Installing packages ..."
+    _msg "Disabling and uninstalling Nouveau modules/drivers ..."
+    
     pkgs="xorg-x11-drv-nouveau"
 
     #remove nouveau driver package
-    sudo dnf remove -y ${pkgs}
+    sudo dnf remove -q -y ${pkgs}
 
     #exclude the nouveau package from dnf install
     sudo cp /etc/dnf/dnf.conf /etc/dnf/dnf.conf.bak
@@ -97,6 +96,3 @@ _exclNouveau() {
     #update grub config
     sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 }
-
-#install proprietary nvidia driver and optional packages to enable cuda/nvenc
-sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda
