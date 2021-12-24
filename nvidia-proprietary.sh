@@ -20,7 +20,7 @@ _msg() {
 ### installer script
 
 usage() {
-  echo "usage: "$0" [-m | --minimal] [-n | --nothemes] [-s | --storeinclude] [-u | --uninstall]"
+  echo "usage: "$0" [-e | --exclude-nouveau] [-n | --negativo] [-u | --uninstall]"
   exit 2
 }
 
@@ -46,7 +46,6 @@ do
 done
 
 
-pkgs="xorg-x11-drv-nouveau"
 
 ##########
 
@@ -61,32 +60,43 @@ sudo dnf -y install nvidia-driver nvidia-settings nvidia-driver-libs.i686
 
 ##########
 
-#--disablerepo rpmfusion-*
+_install() {
+    _msg "Installing packages ..."
+    echo sudo dnf install -y --setopt="exclude=gnome-tour" ${dnf_opts} ${pkgs} | sh
+    # Enable gdm display manager and enable graphical desktop
+    echo sudo systemctl enable gdm | sh
+    echo sudo systemctl set-default graphical.target | sh
+}
 
-#remove nouveau driver package
-sudo dnf remove -y ${pkgs}
+_exclNouveau() {
+    _msg "Installing packages ..."
+    pkgs="xorg-x11-drv-nouveau"
 
-#exclude the nouveau package from dnf install
-sudo cp /etc/dnf/dnf.conf /etc/dnf/dnf.conf.bak
+    #remove nouveau driver package
+    sudo dnf remove -y ${pkgs}
 
-if [ $(grep -q -P '^exclude=' /etc/dnf/dnf.conf; echo $?) != "0" ]; then
-  sed "/\[main\]/a exclude=${pkgs}" /etc/dnf/dnf.conf | sudo tee /etc/dnf/dnf.conf
-elif [ $(grep -q -P "^exclude=.*${pkgs}.*$" /etc/dnf/dnf.conf; echo $?) != "0" ]; then
-  sed "/exclude=/s/$/ ${pkgs}/" /etc/dnf/dnf.conf | sudo tee /etc/dnf/dnf.conf
-fi
+    #exclude the nouveau package from dnf install
+    sudo cp /etc/dnf/dnf.conf /etc/dnf/dnf.conf.bak
 
-#blacklist the nouveau module as a module and in dracut
-echo 'blacklist nouveau' | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
-echo 'omit_drivers+=" nouveau "' | sudo tee /etc/dracut.conf.d/blacklist-nouveau.conf
+    if [ $(grep -q -P '^exclude=' /etc/dnf/dnf.conf; echo $?) != "0" ]; then
+      sed "/\[main\]/a exclude=${pkgs}" /etc/dnf/dnf.conf | sudo tee /etc/dnf/dnf.conf
+    elif [ $(grep -q -P "^exclude=.*${pkgs}.*$" /etc/dnf/dnf.conf; echo $?) != "0" ]; then
+      sed "/exclude=/s/$/ ${pkgs}/" /etc/dnf/dnf.conf | sudo tee /etc/dnf/dnf.conf
+    fi
 
-#backup the current initramfs
-sudo mv /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r)-nouveau.img
+    #blacklist the nouveau module as a module and in dracut
+    echo 'blacklist nouveau' | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
+    echo 'omit_drivers+=" nouveau "' | sudo tee /etc/dracut.conf.d/blacklist-nouveau.conf
 
-#regenerate the current initramfs
-sudo dracut -f /boot/initramfs-$(uname -r).img $(uname -r)
+    #backup the current initramfs
+    sudo mv /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r)-nouveau.img
 
-#update grub config
-sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+    #regenerate the current initramfs
+    sudo dracut -f /boot/initramfs-$(uname -r).img $(uname -r)
+
+    #update grub config
+    sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+}
 
 #install proprietary nvidia driver and optional packages to enable cuda/nvenc
 sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda
