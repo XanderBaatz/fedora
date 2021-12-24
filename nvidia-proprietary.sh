@@ -5,6 +5,47 @@
 #          https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/#nvidia-install
 #          https://negativo17.org/nvidia-driver
 
+
+# check for root privileges
+if [ $(id -u) -ne 0 ]; then
+  exec sudo -- "$0" "$@"
+fi
+
+# message function
+_msg() {
+    echo "=>" "$@"
+}
+
+
+### installer script
+
+usage() {
+  echo "usage: "$0" [-m | --minimal] [-n | --nothemes] [-s | --storeinclude] [-u | --uninstall]"
+  exit 2
+}
+
+PARSED_ARGUMENTS=$(getopt -a -n "$0" -o enu --long exclude-nouveau,negativo,uninstall -- "$@")
+VALID_ARGUMENTS=$?
+if [ "$VALID_ARGUMENTS" != "0" ]; then
+  usage
+fi
+
+eval set -- "$PARSED_ARGUMENTS"
+while :
+do
+  case "$1" in
+    -e | --exclude-nouveau)       exclude=true     ; shift   ;;
+    -n | --negativo)              negativo=false   ; shift   ;;
+    -u | --uninstall)             uninstall=true   ; shift   ;;
+    #
+    --) shift; break ;;
+    #
+    *) echo "Unexpected option: $1 - invalid argument."
+       usage ;;
+  esac
+done
+
+
 pkgs="xorg-x11-drv-nouveau"
 
 ##########
