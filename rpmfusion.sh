@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# wget -qO- https://git.io/JDtlC | sh
 # wget -q https://git.io/JDtlC -O rpmfusion.sh && chmod +x rpmfusion.sh && ./rpmfusion.sh
 
 
