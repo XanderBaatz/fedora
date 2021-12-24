@@ -72,8 +72,9 @@ Finally press **Begin Installation** in the bottom right corner of the Installat
 Run in chronological order:
 
 1. Run `base.sh`
-* (Optional) Run `nvidia-proprietary.sh`
 2. Run `rpmfusion.sh`
+* (Optional) Run `nvidia-proprietary.sh`
 * (Recommended) Run `gnome.sh`
 * (Optional) Run `gnome-extra.sh`
 * (Optional) Run `brave.sh`
+* (Optional) Run `firefox.sh`
