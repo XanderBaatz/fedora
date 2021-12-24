@@ -74,6 +74,7 @@ Run in chronological order:
 1. Run `base.sh`
 2. Run `rpmfusion.sh`
 * (Optional) Run `nvidia-proprietary.sh`
+3. Run `flatpak.sh`
 * (Recommended) Run `gnome.sh`
 * (Optional) Run `gnome-extra.sh`
 * (Optional) Run `brave.sh`
