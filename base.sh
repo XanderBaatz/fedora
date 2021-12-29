@@ -14,5 +14,5 @@ fi
 # Check for updates
 dnf --refresh check-upgrade -y && dnf upgrade -y
 
-#audio, bluetooth, wi-fi
-dnf install -y @hardware-support @networkmanager-submodules @multimedia
+#audio, bluetooth, wi-fi, fonts 
+dnf install -y @hardware-support @networkmanager-submodules @multimedia @fonts
