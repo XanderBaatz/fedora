@@ -50,7 +50,7 @@ done
 
 ### package list compiler
 
-pkgs="@critical-path-gnome"
+pkgs="@critical-path-kde"
 
 if [ "$store" != "true" ]; then
   _msg "Store will not be installed."
