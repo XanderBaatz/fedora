@@ -2,15 +2,15 @@
 # wget -qO- https://git.io/Jykln | sh
 # curl -fsSL https://git.io/Jykln | sh
 
-#check for root privileges
+# check for root privileges
 if [ $(id -u) != 0 ]; then
   exec sudo -- "$0" "$@"
 fi
 
-#install flatpak and add flathub repo
+# install flatpak and add flathub repo
 sudo dnf install -y flatpak
 
-#add and enable third party entry if fedora-third-party is installed
+# add and enable third party entry if fedora-third-party is installed
 fedora_pkgs="fedora-third-party"
 fedoratp_dir="/usr/lib/fedora-third-party/conf.d"
 flathub_url="https://flathub.org/repo/flathub.flatpakrepo"
