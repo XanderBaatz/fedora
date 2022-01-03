@@ -16,7 +16,7 @@ fedora_pkgs="fedora-third-party"
 
 if [ $(dnf list --installed | grep -q -P "${fedora_pkgs}"; echo $?) = "999" ]; then
   sudo sh -c "cat << EOF > /usr/lib/fedora-third-party/conf.d/flathub.conf
-  [rpmfusion-free]
+  [flathub]
   type=flatpak
   flatpakrepo=?
   EOF"
