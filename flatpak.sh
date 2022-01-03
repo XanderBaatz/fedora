@@ -17,17 +17,17 @@ flathub_url="https://flathub.org/repo/flathub.flatpakrepo"
 
 if [ $(dnf list --installed | grep -q -P "${fedora_pkgs}"; echo $?) = "0" ]; then
   # download flathub repo file
-  wget -qO- https://flathub.org/repo/flathub.flatpakrepo
+  wget -q -P ${fedoratp_dir} ${flathub_url}
   
   # add third party repo
   sudo sh -c "cat << EOF > ${fedoratp_dir}/flathub.conf
   [flathub]
   type=flatpak
-  flatpakrepo=${flathub_url}
+  flatpakrepo=flathub.flatpakrepo
   EOF"
   
   # enable third party repos
-  
+  #fedora-third-party enable
 else
   # add flathub repo through flatpak
   flatpak remote-add --if-not-exists flathub ${flathub_url}
