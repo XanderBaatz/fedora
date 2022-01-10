@@ -88,9 +88,9 @@ EOF"
 }
 
 _enable_repos() {
-  _msg "Enabling repos."
+  _msg "Enabling repos ..."
   sudo fedora-third-party enable
-}
+}ii
 
 _normal
 
