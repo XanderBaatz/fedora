@@ -25,7 +25,7 @@ usage() {
   exit 2
 }
 
-PARSED_ARGUMENTS=$(getopt -a -n "$0" -o mnsu --long minimal,nothemes,store,uninstall -- "$@")
+PARSED_ARGUMENTS=$(getopt -a -n "$0" -o mtsu --long minimal,themes,store,uninstall -- "$@")
 VALID_ARGUMENTS=$?
 if [ "$VALID_ARGUMENTS" != "0" ]; then
   usage
@@ -36,7 +36,7 @@ while :
 do
   case "$1" in
     -m | --minimal)       norminst=false     ; shift   ;;
-    -n | --nothemes)      themes=false       ; shift   ;;
+    -t | --themes)        themes=true       ; shift   ;;
     -s | --storeinclude)  store=true         ; shift   ;;
     -u | --uninstall)     uninstall=true     ; shift   ;;
     #
@@ -86,7 +86,7 @@ else
   _msg "Minimal installation."
 fi
 
-if [ "$themes" != "false" ]; then
+if [ "$themes" = "true" ]; then
   _msg "Themes will be installed."
   pkgs="$pkgs \
 	papirus-icon-theme \
