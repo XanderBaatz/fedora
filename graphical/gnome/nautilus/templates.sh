@@ -3,7 +3,10 @@
 # wget link
 
 # bash script template
-sh -c "cat << EOF > ${HOME}/Templates/script.sh
-  #!/bin/bash
+cat > ${HOME}/Templates/script.sh << "EOF
+#!/bin/bash
 
 EOF"
+chmod u+x ${HOME}/Templates/script.sh
+
+# 
