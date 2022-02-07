@@ -2,9 +2,12 @@
 
 # wget link
 
+# template location
+template_dir="${HOME}/Templates"
+
 # make template function
 make_temp (){
-  cat > ${HOME}/Templates/${1} <<EOF
+  cat > ${template_dir}/${1} <<EOF
 ${2}
 EOF
 }
@@ -12,3 +15,6 @@ EOF
 # bash script template
 make_temp "script.sh" "#!/bin/bash
 "
+chmod u+x
+
+# another template
