@@ -4,6 +4,6 @@
 
 # bash script template
 sh -c "cat << EOF > ${HOME}/Templates/script.sh
-#!/bin/bash
+  #!/bin/bash
 
 EOF"
