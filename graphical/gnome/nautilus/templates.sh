@@ -13,8 +13,9 @@ EOF
 }
 
 # bash script template
-make_temp "script.sh" "#!/bin/bash
+script_name="script.sh"
+make_temp "${script_name}" "#!/bin/bash
 "
-chmod u+x
+chmod u+x ${template_dir}/${script_name}
 
 # another template
