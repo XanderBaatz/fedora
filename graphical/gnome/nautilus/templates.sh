@@ -4,16 +4,11 @@
 
 # make template function
 make_temp (){
-  cat > ${HOME}/Templates/${1}.sh <<EOF
+  cat > ${HOME}/Templates/${1} <<EOF
 ${2}
 EOF
 }
 
 # bash script template
-cat > ${HOME}/Templates/script.sh << EOF
-#!/bin/bash
-
-EOF
-chmod u+x ${HOME}/Templates/script.sh
-
-# 
+make_temp "script.sh" "#!/bin/bash
+"
