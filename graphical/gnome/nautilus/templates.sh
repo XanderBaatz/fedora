@@ -12,6 +12,9 @@ ${2}
 EOF
 }
 
+## making a template, e.g.:
+# make_temp "file_name.txt" 'text inside file here'
+
 # bash script template
 script_name="script.sh"
 make_temp "${script_name}" '#!/bin/bash
