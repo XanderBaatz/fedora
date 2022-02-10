@@ -2,6 +2,13 @@
 
 # wget link
 
+#check for root privileges, don't run with root priviliges.
+if [ $(id -u) -e 0 ]; then
+  echo ""
+  echo "Please run with user priviliges. Super user not supported."
+  exit 0
+fi
+
 # template location
 template_dir="${HOME}/Templates"
 
