@@ -9,7 +9,7 @@ fi
 #install tlp and tlp-rdw
 sudo dnf install -y tlp tlp-rdw
 
-#start tlp without rebooting
+#start tlp without reboot
 sudo tlp start
 
 #disable rfkill to avoid radio switching conflict
