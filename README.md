@@ -97,3 +97,10 @@ Extensions:
 - Alphabetical App Grid
 - AppIndicator and KStatusNotifierItem Support
 - Just Perfection
+
+## Applications and repos
+Audio, pluign etc. repo:
+```
+dnf copr enable -y ycollet/audinux
+```
+
