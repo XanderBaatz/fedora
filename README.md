@@ -7,10 +7,14 @@ sudo sh -c "dnf --refresh upgrade -y && flatpak upgrade -y"
 ```
 
 ## Settings, tweaks etc.
+### Mouse / pointer / touchpad
 Disable mouse acceleration:
 ```
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
 ```
+
+### DNF software package manager
+
 
 
 ## Personalization etc.
