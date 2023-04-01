@@ -69,11 +69,10 @@ sudo sh -c "dnf copr enable -y adrienverge/some-nice-fonts && dnf install -y som
 Alternative method (with more/other fonts):
 https://www.fosslinux.com/42406/how-to-install-microsoft-truetype-fonts-on-fedora.htm
 
-Substitutions for popular proprietary fonts from Microsoft and Apple:
+Substitutions for popular proprietary fonts from Microsoft:
 ```
-sudo sh -c "dnf copr enable -y dawid/better_fonts && dnf install -y fontconfig-font-replacements"
+sudo dnf install -y liberation-fonts
 ```
-
 
 ### Themes
 GTK3 libadwaita port (makes GTK3 apps look like GTK4+):
