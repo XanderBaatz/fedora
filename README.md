@@ -29,10 +29,11 @@ grep -qxF "exclude=kernel*" /etc/yum.repos.d/fedora-updates.repo || sed -i "/\[u
 dnf update --refresh -y"
 ```
 
-
-### NVIDIA Driver
-Des
-
+### (Optional) NVIDIA Driver
+Install NVIDIA driver (for more recent NVIDIA GPUs):
+```
+sudo dnf install -y akmod-nvidia
+```
 
 ## Settings, tweaks etc.
 ### Mouse / pointer / touchpad
