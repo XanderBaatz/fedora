@@ -42,6 +42,12 @@ Disable mouse acceleration:
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
 ```
 
+### Nautilus (file manager)
+Sort folders before files:
+```
+gsettings set org.gtk.Settings.FileChooser sort-directories-first true
+```
+
 ### DNF software package manager
 DNF settings optimizations:
 ```
