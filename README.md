@@ -39,13 +39,13 @@ sudo dnf install -y akmod-nvidia
 ### Mouse / pointer / touchpad
 Disable mouse acceleration:
 ```
-gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 ```
 
 ### Nautilus (file manager)
 Sort folders before files:
 ```
-gsettings set org.gtk.Settings.FileChooser sort-directories-first true
+gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
 ```
 
 ### DNF software package manager
