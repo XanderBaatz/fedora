@@ -16,10 +16,10 @@ gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
 ### DNF software package manager
 DNF settings optimizations:
 ```
-sudo cat << EOF >> /etc/dnf/dnf.conf
+sudo sh -c "cat << EOF >> /etc/dnf/dnf.conf
 max_parallel_downloads=10
 fastestmirror=true
-EOF
+EOF"
 ```
 
 
