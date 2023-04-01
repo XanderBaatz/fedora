@@ -14,6 +14,11 @@ gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
 ```
 
 ### DNF software package manager
+DNF settings optimizations:
+```
+echo "max_parallel_downloads=10
+fastestmirror=true" >> greetings.txt
+```
 
 
 
