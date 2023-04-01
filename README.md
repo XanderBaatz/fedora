@@ -55,6 +55,14 @@ EOF"
 
 ## Personalization etc.
 ### Fonts
+Install proprietary Microsoft fonts for compatibility reasons (e.g. Maple):
+```
+sudo sh -c "dnf copr enable -y adrienverge/some-nice-fonts && dnf install -y some-nice-fonts"
+```
+
+Alternative method (with more/other fonts):
+https://www.fosslinux.com/42406/how-to-install-microsoft-truetype-fonts-on-fedora.htm
+
 Install Microsoft fonts for compatibility (e.g. Maple):
 https://www.fosslinux.com/42406/how-to-install-microsoft-truetype-fonts-on-fedora.htm
 
