@@ -16,8 +16,9 @@ sudo sh -c "dnf install -y \
 ```
 
 ### Media codecs
+Install Media codecs:
 ```
-sudo dnf group upgrade --with-optional Multimedia
+sudo dnf group upgrade -y --with-optional Multimedia
 ```
 
 ## Settings, tweaks etc.
