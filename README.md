@@ -74,3 +74,9 @@ GTK3 libadwaita port (makes GTK3 apps look like GTK4+):
 ```
 sudo sh -c "dnf copr enable -y nickavem/adw-gtk3 && dnf install -y adw-gtk3"
 ```
+Change the theme and turn on dark mode:
+```
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' \
+&& gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+```
+
