@@ -85,3 +85,15 @@ One command curled script to auto-download and install the latest version of the
 ```
 curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash
 ```
+
+### Extensions
+Install Extension Manager:
+```
+flatpak install flathub com.mattjakeman.ExtensionManager
+```
+
+Extensions:
+
+- Alphabetical App Grid
+- AppIndicator and KStatusNotifierItem Support
+- Just Perfection
