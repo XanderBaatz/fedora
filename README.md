@@ -21,6 +21,15 @@ Install Media codecs:
 sudo dnf group upgrade -y --with-optional Multimedia
 ```
 
+### (Optional) Fsync kernel
+Fsync kernel, for gaming etc.:
+```
+sudo sh -c "dnf copr enable -y sentry/kernel-fsync && \
+grep -qxF "exclude=kernel*" /etc/yum.repos.d/fedora-updates.repo || sed -i "/\[updates\]/a exclude=kernel*" /etc/yum.repos.d/fedora-updates.repo && \
+dnf update --refresh -y"
+```
+
+
 ### NVIDIA Driver
 Des
 
