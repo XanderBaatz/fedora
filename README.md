@@ -1,5 +1,17 @@
 # Fedora Workstation setup
+
+## Post-install
+Update and upgrade:
+```
+sudo sh -c "dnf --refresh upgrade -y && flatpak upgrade -y"
+```
+
 ## Settings, tweaks etc.
+Disable mouse acceleration:
+```
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
+```
+
 
 ## Personalization etc.
 ### Fonts
