@@ -57,6 +57,15 @@ fastestmirror=true
 EOF"
 ```
 
+### Lockscreen settings
+Install Login Manager Settings:
+```
+flatpak install flathub io.github.realmazharhussain.GdmSettings
+```
+1. Open Login Manager Settings
+2. Go to ``Display``
+3. Click ``Apply`` under ``Apply current display settings``
+4. Apply the changes by clicking ``Apply`` in the top part of the window
 
 
 ## Personalization etc.
