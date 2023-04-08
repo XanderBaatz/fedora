@@ -24,9 +24,8 @@ sudo dnf group upgrade -y --with-optional Multimedia
 ### (Optional) Fsync kernel
 Fsync kernel, for gaming etc.:
 ```
-sudo sh -c "dnf copr enable -y sentry/kernel-fsync && \
-grep -qxF "exclude=kernel*" /etc/yum.repos.d/fedora-updates.repo || sed -i "/\[updates\]/a exclude=kernel*" /etc/yum.repos.d/fedora-updates.repo && \
-dnf update --refresh -y"
+grep -qxF "fastestmirror=" /etc/dnf/dnf.conf || sudo sed -i "/\[main\]/a fastestmirror=True" $_
+grep -qxF "max_parallel_downloads=" /etc/dnf/dnf.conf || sudo sed -i "/\[main\]/a max_parallel_downloads=10" $_
 ```
 
 ### (Optional) NVIDIA Driver
