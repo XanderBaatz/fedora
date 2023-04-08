@@ -24,8 +24,9 @@ sudo dnf group upgrade -y --with-optional Multimedia
 ### (Optional) Fsync kernel
 Fsync kernel, for gaming etc.:
 ```
-grep -qxF "fastestmirror=" /etc/dnf/dnf.conf || sudo sed -i "/\[main\]/a fastestmirror=True" $_
-grep -qxF "max_parallel_downloads=" /etc/dnf/dnf.conf || sudo sed -i "/\[main\]/a max_parallel_downloads=10" $_
+sudo sh -c "dnf copr enable -y sentry/kernel-fsync && \
+grep -qxF "exclude=kernel*" /etc/yum.repos.d/fedora-updates.repo || sed -i "/\[updates\]/a exclude=kernel*" /etc/yum.repos.d/fedora-updates.repo && \
+dnf update --refresh -y"
 ```
 
 ### (Optional) NVIDIA Driver
@@ -50,10 +51,8 @@ gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
 ### DNF software package manager
 DNF settings optimizations:
 ```
-sudo sh -c "cat << EOF >> /etc/dnf/dnf.conf
-max_parallel_downloads=10
-fastestmirror=true
-EOF"
+grep -qxF "fastestmirror=" /etc/dnf/dnf.conf || sudo sed -i "/\[main\]/a fastestmirror=True" $_
+grep -qxF "max_parallel_downloads=" /etc/dnf/dnf.conf || sudo sed -i "/\[main\]/a max_parallel_downloads=10" $_
 ```
 
 ### Lockscreen settings
