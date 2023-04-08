@@ -1,9 +1,9 @@
 # Fedora Workstation setup
 
 ## Post-install
-Update and upgrade:
+Update, upgrade and reboot:
 ```
-sudo sh -c "dnf --refresh upgrade -y && flatpak upgrade -y"
+sudo sh -c "dnf --refresh upgrade -y && flatpak upgrade -y && reboot"
 ```
 
 ### RPM Fusion
