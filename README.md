@@ -22,9 +22,14 @@ sudo sh -c "fwupdmgr get-devices && fwupdmgr refresh --force && fwupdmgr get-upd
 ```
 
 ### Media codecs
+Switch to ffmpeg with patented codecs:
+```
+sudo dnf swap ffmpeg ffmpeg-free --allowerasing
+```
+
 Install Media codecs:
 ```
-sudo dnf group upgrade -y --with-optional Multimedia
+sudo dnf group upgrade -y --with-optional Multimedia --allowerasing
 ```
 
 ### (Optional) Fsync kernel
