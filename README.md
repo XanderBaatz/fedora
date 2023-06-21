@@ -15,6 +15,12 @@ sudo sh -c "dnf install -y \
 && dnf group update -y core"
 ```
 
+### Update firmware
+Update firmware using Firmware Update Manager:
+```
+sudo sh -c "fwupdmgr get-devices && fwupdmgr refresh --force && fwupdmgr get-updates && fwupdmgr update"
+```
+
 ### Media codecs
 Install Media codecs:
 ```
