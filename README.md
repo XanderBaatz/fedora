@@ -127,3 +127,12 @@ Audio, pluign etc. repo:
 dnf copr enable -y ycollet/audinux
 ```
 
+## Kernel compilation
+Refer to:
+https://odysee.com/@mumblingdrunkard:7/20210405-fedora-patch-compile-and-install-kernel:0
+
+Kernel patches, made using the difference between two files (a and b):
+```
+git diff a b > patchfile.patch
+```
+
