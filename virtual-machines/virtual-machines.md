@@ -3,6 +3,7 @@ Links:
 
 - https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/#enabling-hardware-virtualization-support
 - https://christitus.com/vm-setup-in-linux/
+- https://dev.to/christianbueno1/install-windows-11-virtual-machine-on-kvm-libvirt-qemu-virt-manager-in-linux-fedora-3637-rpm-based-distribution-1nkd
 
 ## Windows
 HyperV XML fix:
