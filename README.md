@@ -1,3 +1,28 @@
+# Fedora Silverblue setup
+
+## Post-install
+
+### Update
+Update, upgrade and reboot:
+```
+rpm-ostree upgrade -y && systemctl reboot
+```
+
+### NVIDIA
+Rebase to Universal Blue NVIDIA. Community Fedora Silverblue images with NVIDIA drivers built-in.
+https://github.com/ublue-os/nvidia
+
+### Package Layering
+Layer "essential" packages:
+```
+rpm-ostree install \
+gnome-shell-extension-appindicator \
+gnome-shell-extension-dash-to-dock \
+gnome-shell-extension-gsconnect
+```
+
+---
+
 # Fedora Workstation setup
 
 ## Post-install
@@ -45,6 +70,8 @@ Install NVIDIA driver (for more recent NVIDIA GPUs):
 ```
 sudo dnf install -y akmod-nvidia
 ```
+
+---
 
 ## Settings, tweaks etc.
 ### Mouse / pointer / touchpad
