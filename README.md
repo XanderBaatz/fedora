@@ -27,7 +27,12 @@ Layer "essential" packages:
 rpm-ostree install \
 gnome-shell-extension-appindicator \
 gnome-shell-extension-dash-to-dock \
-gnome-shell-extension-gsconnect
+gnome-shell-extension-gsconnect \
+code \
+gnome-boxes \
+virt-install \
+virt-manager \
+virt-viewer \
 ```
 
 ---
