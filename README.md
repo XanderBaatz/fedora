@@ -12,14 +12,25 @@ rpm-ostree upgrade -y && systemctl reboot
 Community Fedora Silverblue images - optionally with NVIDIA drivers built-in.
 
 #### Ublue Main
-Rebase to Universal Blue Main, if one's not running an NVIDIA GPU:
+Rebase to Universal Blue Main, if one's not running an NVIDIA GPU: https://github.com/ublue-os/main
 
-https://github.com/ublue-os/main
+Rebase command:
+```
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/silverblue-main:latest
+```
 
 #### Ublue NVIDIA
-Rebase to Universal Blue NVIDIA, if one's running an NVIDIA GPU:
+Rebase to Universal Blue NVIDIA, if one's running an NVIDIA GPU: https://github.com/ublue-os/nvidia
 
-https://github.com/ublue-os/nvidia
+Rebase command:
+```
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/silverblue-nvidia:stable
+```
+
+Or:
+```
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/silverblue-nvidia:latest
+```
 
 ### Package Layering
 Layer "essential" packages:
