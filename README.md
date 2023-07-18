@@ -8,8 +8,17 @@ Update, upgrade and reboot:
 rpm-ostree upgrade -y && systemctl reboot
 ```
 
-### NVIDIA
-Rebase to Universal Blue NVIDIA. Community Fedora Silverblue images with NVIDIA drivers built-in.
+### Rebase - Universal Blue
+Community Fedora Silverblue images - optionally with NVIDIA drivers built-in.
+
+#### Ublue Main
+Rebase to Universal Blue Main, if one's not running an NVIDIA GPU:
+
+https://github.com/ublue-os/main
+
+#### Ublue NVIDIA
+Rebase to Universal Blue NVIDIA, if one's running an NVIDIA GPU:
+
 https://github.com/ublue-os/nvidia
 
 ### Package Layering
