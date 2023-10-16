@@ -92,7 +92,12 @@ sudo sh -c "dnf copr enable -y adrienverge/some-nice-fonts && dnf install -y som
 Alternative method (with more/other fonts):
 https://www.fosslinux.com/42406/how-to-install-microsoft-truetype-fonts-on-fedora.htm
 
-Substitutions for popular proprietary fonts from Microsoft:
+Substitutions for popular proprietary fonts from Microsoft, Apple etc.:
+```
+sudo sh -c "dnf copr enable dawid/better_fonts -y && dnf install fontconfig-font-replacements -y
+```
+
+Additionally, one can also install:
 ```
 sudo dnf install -y liberation-fonts
 ```
