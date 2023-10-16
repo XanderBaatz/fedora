@@ -126,6 +126,14 @@ Install Extension Manager:
 flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
+System extensions:
+
+```
+sudo dnf install -y gnome-shell-extension-gsconnect \
+gnome-shell-extension-just-perfection \
+gnome-shell-extension-appindicator
+```
+
 Extensions:
 
 - Alphabetical App Grid
