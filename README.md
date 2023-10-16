@@ -22,15 +22,18 @@ sudo sh -c "fwupdmgr get-devices && fwupdmgr refresh --force && fwupdmgr get-upd
 ```
 
 ### Media codecs
-Switch to ffmpeg with patented codecs:
-```
-sudo dnf swap ffmpeg ffmpeg-free --allowerasing
-```
+Note: do the following after installing RPM Fusion repositories.
 
 Install Media codecs:
 ```
 sudo dnf group upgrade -y --with-optional Multimedia --allowerasing
 ```
+
+Additionally, switch to ffmpeg with patented codecs:
+```
+sudo dnf swap ffmpeg ffmpeg-free --allowerasing
+```
+
 
 ### (Optional) Fsync kernel
 Fsync kernel, for gaming etc.:
