@@ -105,8 +105,9 @@ sudo dnf install -y liberation-fonts
 ### Themes
 GTK3 libadwaita port (makes GTK3 apps look like GTK4+):
 ```
-sudo sh -c "dnf copr enable -y nickavem/adw-gtk3 && dnf install -y adw-gtk3"
+sudo dnf install adw-gtk3-theme
 ```
+
 Change the theme and turn on dark mode:
 ```
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' \
