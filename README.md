@@ -68,6 +68,12 @@ In `.bash_aliases`, add:
 alias sysup='sudo bash -c "dnf --refresh upgrade -y && flatpak upgrade -y"'
 ```
 
+To apply changes run:
+
+```
+source ~/.bash_aliases
+```
+
 ---
 
 ## Settings, tweaks etc.
