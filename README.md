@@ -51,6 +51,25 @@ sudo dnf install -y akmod-nvidia
 
 ---
 
+## Aliases
+Add to `.bashrc`:
+
+```
+# Source custom aliases from ~/.bash_aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+```
+
+In `.bash_aliases`, add:
+
+```
+# Update system
+alias sysup='sudo bash -c "dnf --refresh upgrade -y && flatpak upgrade -y"'
+```
+
+---
+
 ## Settings, tweaks etc.
 ### Mouse / pointer / touchpad
 Disable mouse acceleration:
