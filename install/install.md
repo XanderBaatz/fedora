@@ -30,6 +30,11 @@ Easy way to securely erase NVMe drives using [`nvme-cli`](https://askubuntu.com/
 nvme list
 ```
 
+Check which erase operations are supported:
+```
+nvme id-ctrl --human-readable /dev/nvme0n1 | grep -i sanitize
+```
+
 #### ⚠️ Method 1: Format
 Note that this will WIPE your drive (e.g. device can be `/dev/nvme0n1`):
 ```
