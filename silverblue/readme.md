@@ -1,5 +1,26 @@
 # Fedora Silverblue setup
 
+## Rebase Basics
+Rebase to an unsigned image to get proper signing keys and policies installed:
+```
+IMAGE_PATH=ghcr.io/ublue-os/bluefin-dx
+IMAGE_TAG=stable
+
+rpm-ostree rebase ostree-unverified-registry:$IMAGE_PATH:$IMAGE_TAG
+
+systemctl reboot
+```
+
+Rebase to a signed image:
+```
+IMAGE_PATH=ghcr.io/ublue-os/bluefin-dx
+IMAGE_TAG=stable
+
+rpm-ostree rebase ostree-image-signed:docker//$IMAGE_PATH:$IMAGE_TAG
+
+systemctl reboot
+```
+
 ## Post-install
 
 ### Update
