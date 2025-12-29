@@ -18,6 +18,12 @@ UNDERVOLT_AMOUNT=0xFFFFB
 # USE AT YOUR OWN RISK.
 ```
 
+Common undervolt settings, [use this](https://www.calculator.net/hex-calculator.html?number1=100000&c2op=-&number2=5&calctype=op&x=Calculate):
+- -5: `0xFFFFB`
+- -10: `0xFFFF0`
+- -15: `0xFFFEB`
+- -30: `0xFFFD0`
+
 ### Ryzenadj service
 Store the following as [`ryzenadj.service`](https://github.com/ublue-os/bazzite/blob/8dc7799198e575d708f0bd054a414d497b77e828/system_files/desktop/shared/usr/lib/systemd/system/ryzenadj.service#L8) in `/etc/systemd/system`:
 ```sh
