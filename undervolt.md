@@ -20,7 +20,7 @@ UNDERVOLT_AMOUNT=0xFFFFB
 
 ### Ryzenadj service
 Store the following as [`ryzenadj.service`](https://github.com/ublue-os/bazzite/blob/8dc7799198e575d708f0bd054a414d497b77e828/system_files/desktop/shared/usr/lib/systemd/system/ryzenadj.service#L8) in `/etc/systemd/system`:
-``sh
+```sh
 [Unit]
 Description=CPU Curve Undervolt
 
@@ -32,4 +32,4 @@ ExecStart=/usr/bin/ryzenadj --set-coall=${UNDERVOLT_AMOUNT}
 
 [Install]
 WantedBy=multi-user.target suspend.target hibernate.target hybrid-sleep.target suspend-then-hibernate.target ac.target battery.target
-``
+```
