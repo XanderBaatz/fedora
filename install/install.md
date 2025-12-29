@@ -17,7 +17,7 @@ Make a multi-bootable USB using [Ventoy](https://www.ventoy.net/en/index.html).
 ### Common ISOs
 - [Fedora Workstation Live nightly builds](https://openqa.fedoraproject.org/nightlies.html/)
 - [Ubuntu daily live builds](https://cdimage.ubuntu.com/daily-live/)
-- [Bluefin DX build](https://download.projectbluefin.io/bluefin-dx-stable.iso)
+- [Bluefin](https://docs.projectbluefin.io/downloads/)
 
 
 ## 💽 Disk Management
